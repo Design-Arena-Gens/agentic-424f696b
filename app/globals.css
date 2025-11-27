@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #050505;
+  --surface: #121212;
+  --text-primary: #EDEDED;
+  --text-secondary: #888888;
+  --accent: #00D1FF;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.editorial-heading {
+  letter-spacing: 0.02em;
+  font-variant-ligatures: common-ligatures;
+}
+
+.app-gradient {
+  background:
+    radial-gradient(60% 60% at 50% 40%, rgba(0,209,255,0.08) 0%, rgba(0,0,0,0) 60%),
+    radial-gradient(50% 40% at 60% 70%, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0) 55%);
+}
+
+/* Subtle grid for depth */
+.background-grid {
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px;
+  background-position: -1px -1px, -1px -1px;
+}
